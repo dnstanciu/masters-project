@@ -1,7 +1,5 @@
 # UG4 Project Report Template
 
-![Lazy College Senior Report](http://i.qkme.me/35g9eg.jpg)
-
 ## Motivation
 
 Hello Informaticians,
