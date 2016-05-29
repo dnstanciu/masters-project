@@ -1,3 +1,70 @@
+##########################
+### Personal additions ###
+##########################
+*~                                      # ignore backup files
+books/                                  # ignore books folder
+papers/                                 # ignore papers folder
+
+processed_data/connectivity_matrices/*    # ignore connectivity matrices (large size)
+!processed_data/connectivity_matrices/dWPLI/
+
+processed_data/connectivity_matrices/dWPLI/*
+!processed_data/connectivity_matrices/dWPLI/DCOG15/
+
+data/
+sources/notebooks/.ipynb_checkpoints/
+
+
+# Don't version control output thesis files
+report/out/
+
+#report/infthesis.cls
+#report/eushield.sty
+#report/styles
+
+
+####################################################
+### From https://gist.github.com/octocat/9257657 ###
+####################################################
+# Compiled source #
+###################
+*.com
+*.class
+*.dll
+*.exe
+*.o
+*.so
+ 
+# Packages #
+############
+# it's better to unpack these files and commit the raw source
+# git has its own built in compression methods
+*.7z
+*.dmg
+*.gz
+*.iso
+*.jar
+*.rar
+*.tar
+*.zip
+ 
+# Logs and databases #
+######################
+*.log
+*.sql
+*.sqlite
+ 
+# OS generated files #
+######################
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+
+
 # Byte-compiled / optimized / DLL files
 __pycache__/
 *.py[cod]
