@@ -15,14 +15,6 @@ data/
 sources/notebooks/.ipynb_checkpoints/
 
 
-# Don't version control output thesis files
-report/out/
-
-#report/infthesis.cls
-#report/eushield.sty
-#report/styles
-
-
 ####################################################
 ### From https://gist.github.com/octocat/9257657 ###
 ####################################################
