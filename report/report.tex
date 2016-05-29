@@ -1,0 +1,66 @@
+\documentclass[12pt,oneside,abbrevs,dtc,mscres,neuro,notimes,logo]{styles/infthesis}
+
+\usepackage{reportpackages}
+\usepackage[strict]{changepage}
+\usepackage{longtable}
+\usepackage{rotating}
+\usepackage[morefloats=7]{morefloats}
+
+\mathtoolsset{showonlyrefs=false}
+
+\renewcommand\theFancyVerbLine{\normalsize\arabic{FancyVerbLine}}
+
+% Project Details
+
+\title{Graph Theory as an Alzheimer's Disease Diagnostic Instrument in the Context of Functional Brain Connectivity}
+%\title{Analysis of Functional Brain Connectivity using Graph Theory in Alzheimer’s Disease}
+%Graph Theory as an Alzheimer's Disease Diagnostic Instrument in the Context of Functional Brain Connectivity 
+%Applied to Functional Brain Connectivity as a Disease Prediction 
+\author{Dragos Stanciu}
+\submityear{2014}
+\date{\today}
+
+
+\input{sections/misc/acronyms}
+\input{sections/misc/abstract}
+
+% Extra Package Commands
+\begin{document}
+  \begin{preliminary}
+    % Title Page
+    \shieldtype{1}
+    \maketitle
+    \pagenumbering{roman}
+    % Preamble
+    \input{sections/misc/acknowledgements}
+    \standarddeclaration
+    \input{sections/misc/dedication}
+    \tableofcontents
+    \listoffigures
+    \listoftables
+    %\listofacronyms
+  \end{preliminary}
+
+  \acresetall
+  \pagenumbering{arabic}
+  % Chapters
+  \input{sections/intro}
+  \input{sections/background}
+  \input{sections/methodology}
+  \input{sections/results}
+  \input{sections/discussion}
+  \input{sections/conclusion}
+
+  % Appendix
+  \appendix
+  \input{sections/appendix/extrafigures}
+  \input{sections/appendix/fda}
+  
+  \chapter{Confusion Matrices}
+  \label{appendix:confusionmatrices}
+  \input{sections/appendix/confusionLR}
+  \include{sections/appendix/confusionRF}
+
+  % Bibliography
+  \printbibliography
+\end{document}

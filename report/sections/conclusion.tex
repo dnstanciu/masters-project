@@ -1,0 +1,18 @@
+% bring together work of the dissertation; show how initial research plan has been addressed in a way that conclusions may be formed from the evidence of the dissertation
+
+% no new material
+% make statement on the extent to which each of the aims and objectives has been met
+% go back to research question
+
+\chapter{Conclusions}
+	A complete processing pipeline was built during the course of this highly interdisciplinary project. In the signal processing stage, \ac{MEG} signals were filtered into the frequency bands of interest, frequency analysis was used for extracting phase information and \ac{dWPLI} was applied to compute correlations between sensors. In the graph analysis stage, proportional thresholding was used to create five connectivity matrices for each subject. Graph features were computed for each matrix. In the last stage, classification using logistic regression and random forests was performed on the graph metrics.
+
+	While the individual modules of the initial pipeline plan were to a certain degree completed, insignificant results were obtained according to statistical testing. The two main problems in the methodological approach are as follows: in the graph analysis stage, there is a clear problem with the generation of random graphs, which in turn affects the \ac{SW} measure. Further investigation is needed. In the classification stage, the algorithms need to be tweaked so that specificity is increased.
+	
+	\section{Future Work}
+
+	As good classification scores are a natural consequence of good, separable features, it follows that identification of measures and methodologies that return features with significant differences across groups are to be prioritised. \textcite{Stam2014} recently put forward a new technique to solve the thresholding problem. He advises using the Minimum Spanning Tree as the basis for computing network measures. This should provide the basis for a more standard procedure for computing graph metrics.
+	There have been some preliminary results that showed significant results in this project when the \ac{PLV} connectivity measure was employed in the signal processing stage. Comparison of different connectivity measures is a possible future step.
+	Lastly, there has been a trend for the neuroscience community to shift from sensor analysis to source analysis \autocite{Schoffelen2009}. This is motivated by the volume conduction problem. Due to time constraints, source analysis was not explored, but a future project may try this approach. Magnetic resonance imaging was not available for this dataset, but recent tools make use of default anatomical maps that can facilitate source reconstruction \autocite{Tadel2011}.
+	
+

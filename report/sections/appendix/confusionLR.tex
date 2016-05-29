@@ -1,0 +1,183 @@
+\section{Logistic Regression}
+
+\begin{table}
+\begin{center}
+	\begin{tabular}{cc|c|c|c|}
+	\cline{3-5}
+	& & \multicolumn{3}{c|}{Predicted Class} \\ \cline{3-5} & & CS & MCI & AD \\ \cline{1-5}
+	\multicolumn{1}{ |c| }{\multirow{2}{*}{Actual Class}} &\multicolumn{1}{ |c| }{CS} & 13 & 2 & 11\\ \cline{2-5}
+	\multicolumn{1}{ |c  }{}  & 
+	\multicolumn{1}{ |c| }{MCI} & 4 & 3 & 11 \\ \cline{2-5}
+	\multicolumn{1}{ |c  }{}  & 
+	\multicolumn{1}{ |c| }{AD} & 10 & 3 & 23 \\
+	\cline{1-5}
+
+	\end{tabular}
+\caption{Confusion matrix for logistic regression trained on original data, threshold 0.05.}
+\label{tab:logreg0.05-original}
+\end{center}
+\end{table}
+
+\begin{table}
+		\begin{center}
+			\begin{tabular}{cc|c|c|c|}
+			\cline{3-5}
+			& & \multicolumn{3}{c|}{Predicted Class} \\ \cline{3-5} & & CS & MCI & AD \\ \cline{1-5}
+			\multicolumn{1}{ |c| }{\multirow{2}{*}{Actual Class}} &\multicolumn{1}{ |c| }{CS} & 25 & 4 & 7\\ \cline{2-5}
+			\multicolumn{1}{ |c  }{}  & 
+			\multicolumn{1}{ |c| }{MCI} & 7 & 20 & 9 \\ \cline{2-5}
+			\multicolumn{1}{ |c  }{}  & 
+			\multicolumn{1}{ |c| }{AD} & 8 & 11 & 17 \\
+			\cline{1-5}
+
+			\end{tabular}
+		\caption{Confusion matrix for logistic regression trained on data with SMOTE, threshold 0.05.}
+		\label{tab:logreg0.05-smote}
+		\end{center}
+		\end{table}
+
+		\begin{table}
+		\begin{center}
+			\begin{tabular}{cc|c|c|c|}
+			\cline{3-5}
+			& & \multicolumn{3}{c|}{Predicted Class} \\ \cline{3-5} & & CS & MCI & AD \\ \cline{1-5}
+			\multicolumn{1}{ |c| }{\multirow{2}{*}{Actual Class}} &\multicolumn{1}{ |c| }{CS} & 13 & 3 & 10\\ \cline{2-5}
+			\multicolumn{1}{ |c  }{}  & 
+			\multicolumn{1}{ |c| }{MCI} & 6 & 2 & 10 \\ \cline{2-5}
+			\multicolumn{1}{ |c  }{}  & 
+			\multicolumn{1}{ |c| }{AD} & 9 & 6 & 21 \\
+			\cline{1-5}
+
+			\end{tabular}
+		\caption{Confusion matrix for logistic regression trained on original data, threshold 0.1.}
+		\label{tab:logreg0.1-original}
+		\end{center}
+		\end{table}
+
+		\begin{table}
+		\begin{center}
+			\begin{tabular}{cc|c|c|c|}
+			\cline{3-5}
+			& & \multicolumn{3}{c|}{Predicted Class} \\ \cline{3-5} & & CS & MCI & AD \\ \cline{1-5}
+			\multicolumn{1}{ |c| }{\multirow{2}{*}{Actual Class}} &\multicolumn{1}{ |c| }{CS} & 24 & 5 & 7\\ \cline{2-5}
+			\multicolumn{1}{ |c  }{}  & 
+			\multicolumn{1}{ |c| }{MCI} & 8 & 21 & 7 \\ \cline{2-5}
+			\multicolumn{1}{ |c  }{}  & 
+			\multicolumn{1}{ |c| }{AD} & 10 & 9 & 17 \\
+			\cline{1-5}
+
+			\end{tabular}
+		\caption{Confusion matrix for logistic regression trained on data with SMOTE, threshold 0.1.}
+		\label{tab:logreg0.1-smote}
+		\end{center}
+		\end{table}
+
+		\begin{table}
+		\begin{center}
+			\begin{tabular}{cc|c|c|c|}
+			\cline{3-5}
+			& & \multicolumn{3}{c|}{Predicted Class} \\ \cline{3-5} & & CS & MCI & AD \\ \cline{1-5}
+			\multicolumn{1}{ |c| }{\multirow{2}{*}{Actual Class}} &\multicolumn{1}{ |c| }{CS} & 10 & 4 & 12\\ \cline{2-5}
+			\multicolumn{1}{ |c  }{}  & 
+			\multicolumn{1}{ |c| }{MCI} & 5 & 2 & 11 \\ \cline{2-5}
+			\multicolumn{1}{ |c  }{}  & 
+			\multicolumn{1}{ |c| }{AD} & 9 & 5 & 22 \\
+			\cline{1-5}
+
+			\end{tabular}
+		\caption{Confusion matrix for logistic regression trained on original data, threshold 0.15.}
+		\label{tab:logreg0.15-original}
+		\end{center}
+		\end{table}
+
+		\begin{table}
+		\begin{center}
+			\begin{tabular}{cc|c|c|c|}
+			\cline{3-5}
+			& & \multicolumn{3}{c|}{Predicted Class} \\ \cline{3-5} & & CS & MCI & AD \\ \cline{1-5}
+			\multicolumn{1}{ |c| }{\multirow{2}{*}{Actual Class}} &\multicolumn{1}{ |c| }{CS} & 15 & 11 & 10\\ \cline{2-5}
+			\multicolumn{1}{ |c  }{}  & 
+			\multicolumn{1}{ |c| }{MCI} & 11 & 17 & 8 \\ \cline{2-5}
+			\multicolumn{1}{ |c  }{}  & 
+			\multicolumn{1}{ |c| }{AD} & 11 & 10 & 15 \\
+			\cline{1-5}
+
+			\end{tabular}
+		\caption{Confusion matrix for logistic regression trained on data with SMOTE, threshold 0.15.}
+		\label{tab:logreg0.15-smote}
+		\end{center}
+		\end{table}
+
+
+		\begin{table}
+		\begin{center}
+			\begin{tabular}{cc|c|c|c|}
+			\cline{3-5}
+			& & \multicolumn{3}{c|}{Predicted Class} \\ \cline{3-5} & & CS & MCI & AD \\ \cline{1-5}
+			\multicolumn{1}{ |c| }{\multirow{2}{*}{Actual Class}} &\multicolumn{1}{ |c| }{CS} & 9 & 5 & 12\\ \cline{2-5}
+			\multicolumn{1}{ |c  }{}  & 
+			\multicolumn{1}{ |c| }{MCI} & 5 & 0 & 13 \\ \cline{2-5}
+			\multicolumn{1}{ |c  }{}  & 
+			\multicolumn{1}{ |c| }{AD} & 9 & 6 & 21 \\
+			\cline{1-5}
+
+			\end{tabular}
+		\caption{Confusion matrix for logistic regression trained on original data, threshold 0.2.}
+		\label{tab:logreg0.2-original}
+		\end{center}
+		\end{table}
+
+		\begin{table}
+		\begin{center}
+			\begin{tabular}{cc|c|c|c|}
+			\cline{3-5}
+			& & \multicolumn{3}{c|}{Predicted Class} \\ \cline{3-5} & & CS & MCI & AD \\ \cline{1-5}
+			\multicolumn{1}{ |c| }{\multirow{2}{*}{Actual Class}} &\multicolumn{1}{ |c| }{CS} & 21 & 7 & 8\\ \cline{2-5}
+			\multicolumn{1}{ |c  }{}  & 
+			\multicolumn{1}{ |c| }{MCI} & 4 & 20 & 12 \\ \cline{2-5}
+			\multicolumn{1}{ |c  }{}  & 
+			\multicolumn{1}{ |c| }{AD} & 10 & 13 & 13 \\
+			\cline{1-5}
+
+			\end{tabular}
+		\caption{Confusion matrix for logistic regression trained on data with SMOTE, threshold 0.2.}
+		\label{tab:logreg0.2-smote}
+		\end{center}
+		\end{table}
+
+
+		\begin{table}
+		\begin{center}
+			\begin{tabular}{cc|c|c|c|}
+			\cline{3-5}
+			& & \multicolumn{3}{c|}{Predicted Class} \\ \cline{3-5} & & CS & MCI & AD \\ \cline{1-5}
+			\multicolumn{1}{ |c| }{\multirow{2}{*}{Actual Class}} &\multicolumn{1}{ |c| }{CS} & 6 & 6 & 14\\ \cline{2-5}
+			\multicolumn{1}{ |c  }{}  & 
+			\multicolumn{1}{ |c| }{MCI} & 6 & 2 & 10 \\ \cline{2-5}
+			\multicolumn{1}{ |c  }{}  & 
+			\multicolumn{1}{ |c| }{AD} & 10 & 4 & 22 \\
+			\cline{1-5}
+
+			\end{tabular}
+		\caption{Confusion matrix for logistic regression trained on original data, threshold 0.3.}
+		\label{tab:logreg0.3-original}
+		\end{center}
+		\end{table}
+
+		\begin{table}
+		\begin{center}
+			\begin{tabular}{cc|c|c|c|}
+			\cline{3-5}
+			& & \multicolumn{3}{c|}{Predicted Class} \\ \cline{3-5} & & CS & MCI & AD \\ \cline{1-5}
+			\multicolumn{1}{ |c| }{\multirow{2}{*}{Actual Class}} &\multicolumn{1}{ |c| }{CS} & 13 & 13 & 10\\ \cline{2-5}
+			\multicolumn{1}{ |c  }{}  & 
+			\multicolumn{1}{ |c| }{MCI} & 12 & 11 & 13 \\ \cline{2-5}
+			\multicolumn{1}{ |c  }{}  & 
+			\multicolumn{1}{ |c| }{AD} & 6 & 11 & 19 \\
+			\cline{1-5}
+
+			\end{tabular}
+		\caption{Confusion matrix for logistic regression trained on data with SMOTE, threshold 0.3.}
+		\label{tab:logreg0.3-smote}
+		\end{center}
+		\end{table}

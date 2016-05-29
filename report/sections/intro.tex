@@ -1,0 +1,78 @@
+\chapter{Introduction}
+
+% 500-750 words
+
+% context in which research took place
+% why is the subject important
+% key participants
+
+
+
+
+\section{Motivation}
+% why was this research carried out; application of machine learning to clinical setting...
+\ac{AD} is the most frequent cause of dementia \autocite{Cummings2004}. Global costs are expected to have a remarkable growth as predictions show that by the year 2050, 1 out of 85 people will suffer from the disease \autocite{Brookmeyer2007}. \ac{MCI} is a key pre-stage of \ac{AD} \autocite{Morris2001}. Early diagnosis of this stage using inexpensive biomarkers would allow a larger number of patients to start treatments in advance. This may significantly delay disease onset \autocite{Cummings2004}.
+
+Network analysis of neurodegenerative disorders is a young research field which has already shown promising results in disease diagnosis and progression \autocite{Zhou2010, Rowe2010DCM}. \ac{MEG} is a neuroimaging technique that can help find differences between neural patterns in the diseased brain and healthy brain \autocite{Stam2010}. Graph theory is a well-established framework that has the potential to standardise interpretation of neuroimaging results \autocite{Stam2010}. 
+
+Existing results are inconsistent with respect to certain methodologies \autocite{Tijms2013}. This piece of research aims to supplement the current \ac{AD} research literature by employing promising techniques from three areas of interest: signal processing, graph theory and machine learning. 
+
+\section{Objectives}
+\label{sec:objectives}
+
+The present data analysis project aimed to answer the following research question: 
+
+\begin{center}
+	{\textbf{What are the identifiable differences in functional brain connectivity between populations of \ac{AD}, \ac{MCI} and \ac{CS}?}}
+\end{center}
+The partial objectives of the project were defined in the original proposal \autocite{Stanciu} as follows:
+
+
+\begin{description}
+\item[Signal Processing] \hfill \\
+  Compute correlations between pairs of \ac{MEG} sensors
+  \item[Graph Analysis] \hfill \\
+  Compute functional connectivity graphs and graph measures
+  \item[Classification] \hfill \\
+  Train classifiers using graph measures as features to assign recordings of new subjects in one of the \ac{AD}, \ac{MCI} or \ac{CS} categories
+\end{description}
+% end Objectives
+
+\section{Achievements}
+
+A modular data processing pipeline has been created which is able to take \ac{MEG} recordings as input and make predictions about which of the \ac{AD}, \ac{MCI} or \ac{CS} groups the signals originated from.
+
+Brain connectivity graphs were created and graph measures were extracted from them. Classifiers were trained on these measures with the purpose of disease prediction.
+
+Statistical analysis showed that for certain pipeline settings, results were not significant. Nevertheless, an easy to customise framework is in place and future methodological refinements should produce better results.
+
+% end Achievements
+
+\section{Outline}
+
+% what topics are going to be discussed in each chapter and how each chapter related to each other; ROADMAP 
+
+\begin{itemize}
+	\item \textbf{Chapter 2} contains background research for better understanding of the scope of the project. Brief presentations of \ac{AD} and \ac{MEG} are provided in the beginning sections. These are followed by a description of graph theory concepts and a review of recent studies applying graph theory in the context of functional brain connectivity.
+
+	\item \textbf{Chapter 3} describes the signal processing, graph theory and classification stages of the pipeline used to address the research question in Section~\ref{sec:objectives}. Techniques used for each of the three modules are explained. 
+
+	\item \textbf{Chapter 4} presents the results of this project. These are comprised of extracted graph measures, statistical analysis performed on these values and performances of classification methods.
+
+	\item \textbf{Chapter 5} evaluates the findings and discusses project limitations. 
+
+	\item \textbf{Chapter 6} compares deliverables with initial project objectives and suggests avenues for future research.   
+\end{itemize}
+% end Outline
+
+\section*{Conclusion}
+
+This chapter described why research in \ac{AD} is important and outlined the project objectives. The next chapter describes key concepts needed for a better appreciation of the research methods used in this project. 
+
+
+
+
+
+
+
+

@@ -1,0 +1,184 @@
+\section{Random Forest}
+\label{appendix:rf-conf}
+
+\begin{table}[h]
+		\begin{center}
+			\begin{tabular}{cc|c|c|c|}
+			\cline{3-5}
+			& & \multicolumn{3}{c|}{Predicted Class} \\ \cline{3-5} & & CS & MCI & AD \\ \cline{1-5}
+			\multicolumn{1}{ |c| }{\multirow{2}{*}{Actual Class}} &\multicolumn{1}{ |c| }{CS} & 10 & 2 & 14\\ \cline{2-5}
+			\multicolumn{1}{ |c  }{}  & 
+			\multicolumn{1}{ |c| }{MCI} & 4 & 2 & 12 \\ \cline{2-5}
+			\multicolumn{1}{ |c  }{}  & 
+			\multicolumn{1}{ |c| }{AD} & 7 & 1 & 28 \\
+			\cline{1-5}
+
+			\end{tabular}
+		\caption{Confusion matrix for random forest trained on original data, threshold 0.05.}
+		\label{tab:randfor0.05-original}
+		\end{center}
+		\end{table}
+
+		\begin{table}
+		\begin{center}
+			\begin{tabular}{cc|c|c|c|}
+			\cline{3-5}
+			& & \multicolumn{3}{c|}{Predicted Class} \\ \cline{3-5} & & CS & MCI & AD \\ \cline{1-5}
+			\multicolumn{1}{ |c| }{\multirow{2}{*}{Actual Class}} &\multicolumn{1}{ |c| }{CS} & 21 & 1 & 8\\ \cline{2-5}
+			\multicolumn{1}{ |c  }{}  & 
+			\multicolumn{1}{ |c| }{MCI} & 1 & 28 & 7 \\ \cline{2-5}
+			\multicolumn{1}{ |c  }{}  & 
+			\multicolumn{1}{ |c| }{AD} & 6 & 10 & 20 \\
+			\cline{1-5}
+
+			\end{tabular}
+		\caption{Confusion matrix for random forest trained on data with SMOTE, threshold 0.05.}
+		\label{tab:randfor0.05-smote}
+		\end{center}
+		\end{table}
+
+			\begin{table}
+			\begin{center}
+				\begin{tabular}{cc|c|c|c|}
+				\cline{3-5}
+				& & \multicolumn{3}{c|}{Predicted Class} \\ \cline{3-5} & & CS & MCI & AD \\ \cline{1-5}
+				\multicolumn{1}{ |c| }{\multirow{2}{*}{Actual Class}} &\multicolumn{1}{ |c| }{CS} & 8 & 2 & 16\\ \cline{2-5}
+				\multicolumn{1}{ |c  }{}  & 
+				\multicolumn{1}{ |c| }{MCI} & 3 & 1 & 14 \\ \cline{2-5}
+				\multicolumn{1}{ |c  }{}  & 
+				\multicolumn{1}{ |c| }{AD} & 7 & 3 & 26 \\
+				\cline{1-5}
+
+				\end{tabular}
+			\caption{Confusion matrix for random forest trained on original data, threshold 0.1.}
+			\label{tab:randfor0.1-original}
+			\end{center}
+			\end{table}
+
+			\begin{table}
+			\begin{center}
+				\begin{tabular}{cc|c|c|c|}
+				\cline{3-5}
+				& & \multicolumn{3}{c|}{Predicted Class} \\ \cline{3-5} & & CS & MCI & AD \\ \cline{1-5}
+				\multicolumn{1}{ |c| }{\multirow{2}{*}{Actual Class}} &\multicolumn{1}{ |c| }{CS} & 25 & 6 & 5\\ \cline{2-5}
+				\multicolumn{1}{ |c  }{}  & 
+				\multicolumn{1}{ |c| }{MCI} & 1 & 31 & 4 \\ \cline{2-5}
+				\multicolumn{1}{ |c  }{}  & 
+				\multicolumn{1}{ |c| }{AD} & 7 & 10 & 19 \\
+				\cline{1-5}
+
+				\end{tabular}
+			\caption{Confusion matrix for random forest trained on data with SMOTE, threshold 0.1.}
+			\label{tab:randfor0.1-smote}
+			\end{center}
+			\end{table}
+
+
+			\begin{table}
+			\begin{center}
+				\begin{tabular}{cc|c|c|c|}
+				\cline{3-5}
+				& & \multicolumn{3}{c|}{Predicted Class} \\ \cline{3-5} & & CS & MCI & AD \\ \cline{1-5}
+				\multicolumn{1}{ |c| }{\multirow{2}{*}{Actual Class}} &\multicolumn{1}{ |c| }{CS} & 10 & 1 & 15\\ \cline{2-5}
+				\multicolumn{1}{ |c  }{}  & 
+				\multicolumn{1}{ |c| }{MCI} & 3 & 0 & 15 \\ \cline{2-5}
+				\multicolumn{1}{ |c  }{}  & 
+				\multicolumn{1}{ |c| }{AD} & 9 & 1 & 26 \\
+				\cline{1-5}
+
+				\end{tabular}
+			\caption{Confusion matrix for random forest trained on original data, threshold 0.15.}
+			\label{tab:randfor0.15-original}
+			\end{center}
+			\end{table}
+
+			\begin{table}
+			\begin{center}
+				\begin{tabular}{cc|c|c|c|}
+				\cline{3-5}
+				& & \multicolumn{3}{c|}{Predicted Class} \\ \cline{3-5} & & CS & MCI & AD \\ \cline{1-5}
+				\multicolumn{1}{ |c| }{\multirow{2}{*}{Actual Class}} &\multicolumn{1}{ |c| }{CS} & 25 & 3 & 8\\ \cline{2-5}
+				\multicolumn{1}{ |c  }{}  & 
+				\multicolumn{1}{ |c| }{MCI} & 2 & 29 & 5 \\ \cline{2-5}
+				\multicolumn{1}{ |c  }{}  & 
+				\multicolumn{1}{ |c| }{AD} & 8 & 7 & 21 \\
+				\cline{1-5}
+
+				\end{tabular}
+			\caption{Confusion matrix for random forest trained on data with SMOTE, threshold 0.15.}
+			\label{tab:randfor0.15-smote}
+			\end{center}
+			\end{table}
+
+
+			\begin{table}
+			\begin{center}
+				\begin{tabular}{cc|c|c|c|}
+				\cline{3-5}
+				& & \multicolumn{3}{c|}{Predicted Class} \\ \cline{3-5} & & CS & MCI & AD \\ \cline{1-5}
+				\multicolumn{1}{ |c| }{\multirow{2}{*}{Actual Class}} &\multicolumn{1}{ |c| }{CS} & 6 & 2 & 18\\ \cline{2-5}
+				\multicolumn{1}{ |c  }{}  & 
+				\multicolumn{1}{ |c| }{MCI} & 3 & 0 & 15 \\ \cline{2-5}
+				\multicolumn{1}{ |c  }{}  & 
+				\multicolumn{1}{ |c| }{AD} & 7 & 1 & 28 \\
+				\cline{1-5}
+
+				\end{tabular}
+			\caption{Confusion matrix for random forest trained on original data, threshold 0.2.}
+			\label{tab:randfor0.2-original}
+			\end{center}
+			\end{table}
+
+			\begin{table}
+			\begin{center}
+				\begin{tabular}{cc|c|c|c|}
+				\cline{3-5}
+				& & \multicolumn{3}{c|}{Predicted Class} \\ \cline{3-5} & & CS & MCI & AD \\ \cline{1-5}
+				\multicolumn{1}{ |c| }{\multirow{2}{*}{Actual Class}} &\multicolumn{1}{ |c| }{CS} & 24 & 4 & 8\\ \cline{2-5}
+				\multicolumn{1}{ |c  }{}  & 
+				\multicolumn{1}{ |c| }{MCI} & 2 & 29 & 5 \\ \cline{2-5}
+				\multicolumn{1}{ |c  }{}  & 
+				\multicolumn{1}{ |c| }{AD} & 6 & 10 & 20 \\
+				\cline{1-5}
+
+				\end{tabular}
+			\caption{Confusion matrix for random forest trained on data with SMOTE, threshold 0.2.}
+			\label{tab:randfor0.2-smote}
+			\end{center}
+			\end{table}
+
+			\begin{table}
+			\begin{center}
+				\begin{tabular}{cc|c|c|c|}
+				\cline{3-5}
+				& & \multicolumn{3}{c|}{Predicted Class} \\ \cline{3-5} & & CS & MCI & AD \\ \cline{1-5}
+				\multicolumn{1}{ |c| }{\multirow{2}{*}{Actual Class}} &\multicolumn{1}{ |c| }{CS} & 12 & 0 & 14\\ \cline{2-5}
+				\multicolumn{1}{ |c  }{}  & 
+				\multicolumn{1}{ |c| }{MCI} & 3 & 0 & 15 \\ \cline{2-5}
+				\multicolumn{1}{ |c  }{}  & 
+				\multicolumn{1}{ |c| }{AD} & 6 & 1 & 29 \\
+				\cline{1-5}
+
+				\end{tabular}
+			\caption{Confusion matrix for random forest trained on original data, threshold 0.3.}
+			\label{tab:randfor0.3-original}
+			\end{center}
+			\end{table}
+
+			\begin{table}
+			\begin{center}
+				\begin{tabular}{cc|c|c|c|}
+				\cline{3-5}
+				& & \multicolumn{3}{c|}{Predicted Class} \\ \cline{3-5} & & CS & MCI & AD \\ \cline{1-5}
+				\multicolumn{1}{ |c| }{\multirow{2}{*}{Actual Class}} &\multicolumn{1}{ |c| }{CS} & 23 & 6 & 7\\ \cline{2-5}
+				\multicolumn{1}{ |c  }{}  & 
+				\multicolumn{1}{ |c| }{MCI} & 4 & 26 & 6 \\ \cline{2-5}
+				\multicolumn{1}{ |c  }{}  & 
+				\multicolumn{1}{ |c| }{AD} & 7 & 8 & 21 \\
+				\cline{1-5}
+
+				\end{tabular}
+			\caption{Confusion matrix for random forest trained on data with SMOTE, threshold 0.3.}
+			\label{tab:randfor0.3-smote}
+			\end{center}
+			\end{table}

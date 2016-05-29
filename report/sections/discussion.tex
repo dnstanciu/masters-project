@@ -1,0 +1,43 @@
+\chapter{Discussion}
+% highlight reason and significance behind features or decisions being discussed
+% focus on data relevant to research questions
+% critical thinking on primary results and analysis with reference to lit review
+% highlight where are the major differences and similarities from the literature or between different groups
+
+
+% introduction: remind the reader what where the research objectives. 
+
+It is reminded that the main objective that this project set out to achieve was finding the main differences in functional brain connectivity between populations of \ac{AD}, \ac{MCI} and \ac{CS}. This objective was divided in a set of three partial goals composed of a signal processing stage, a graph analysis step and a classification stage.
+
+
+% COMPARE WITH PLV STUDIES AND dWPLI studies!
+
+% dwpli used by other studies?
+
+The first observation that needs to be made is related to the statistical analysis. The only significant result (\(p<0.05\)) was for the \ac{SW} measure when \ac{FDA} was done between the \ac{AD} and \ac{CS} groups in the \(\alpha\) band. This supposedly happened because of the \ac{AD} networks having a topology closer to that of random networks as reported in previous studies \autocite{Stam2007a,Lo2010,Zhao2012}. This may be due to a decrease in the normalised path length (\( \frac{L}{L_{rand}} \)), but results are not significant enough to prove this hypothesis. 
+
+% Small-worldness
+
+Previous studies reported that \ac{SW} networks have a value much higher than unity \autocite{Rubinov2010}. The reason behind this is that {C} is greater than 1 and \( \frac{L}{L_{rand}} \) approaches 1. When building the connectivity graphs, with increasing density thresholds, it is expected that \ac{SW} should decrease and approach unity as more and more edges are added to the graph. In the present study, it can be observed in Fig.~\ref{fig:graphmeasure-witherror} that \ac{SW} values start at a low value when small thresholds are used. As weaker links are added to the graphs, \ac{SW} increases and starts to approach the value of one. 
+
+A possible explanation for this strange behaviour is the way the random networks are created when computing \ac{SW}. For small thresholds (only strongest links are kept), the graph risks of becoming segmented and multiple graph components (subgraphs) may emerge. The \ac{BCT} \textit{randmio_und_connected()} function that generates the random graphs maintains the connectedness property of the input graph. There is a chance that this function might cluster the rewired edges into a single component, which in turn increases the average clustering coefficient for a random graph. A solution for this problem would be to either change how the random graphs are generated or, more conveniently, restrict analysis to thresholds that satisfy the condition that all subject graphs are connected, i.e\ each subject graph is a single component graph \autocite{Rudie2012}. In this case, connectedness refers to the ability of a node to reach any other node in the graph and should not be confused with a fully connected graph where there is a link between every node and every other node in the graph. 
+The creation of random graphs used for comparison is a known problem \autocite{Tijms2013} and studies should specify how these networks are created. The present study identified that caution should be exercised when relying on libraries for random network generation. 
+
+The same problem of multiple graph components in the same connectivity network might occur in other measures which might explain the rapid change of the mean curves in Fig.~\ref{fig:graphmeasure-witherror}. Measures such as \ac{GE} are robust to the problem of isolated nodes in the graph \autocite{Latora2001,Fallani2014}. In the present results, the measure increases almost uniformly as path lengths decrease with the additions of weaker edges, but no observations can be made about group differences. 
+
+The plot of mean graph measures without the error bars found in Appendix A, Fig.~\ref{fig:graphmeasure-noerror} seemed to clearly show that \ac{C} is higher in \ac{CS} than either \ac{AD} or \ac{MCI} in the \(\theta\) band, but high within-group variance proved this pattern to be insignificant. 
+
+\ac{Q} was shown by \textcite{DeHaan2012b} to be smaller in \ac{AD} networks, but no conclusive observations can be made about the present results.
+
+
+%%%%%% Classification is good where graph features have high variance--> for intermediate thresholds.
+Classification was known to be a difficult task after the generation of \ac{t-SNE} plots. Figures~\ref{fig:tsneT1} to \ref{fig:tsneT5} show that there are no clear clusters of data. This means that the computed graph features are not very structured and separating the classes would be far from trivial. Brief inspection of the confusion matrices in Appendix~\ref{appendix:confusionmatrices} reveals that both logistic regression and random forest classifier were biased in predicting \ac{AD}. The cause of this is the class imbalance problem and can be solved by training the algorithms with the same number of training samples for each class \autocite{Chawla:2002:SSM:1622407.1622416}. In this project, the problem was solved using \ac{SMOTE} by generating new samples for the minority classes. With the new data, both classifier performances improved. A caveat of this method is that the algorithms were essentially partly trained with "fake data" which does not necessarily reflect data from an actual subject. In consequence, if a study is performing classification, a strong recommendation would be to have an equal number of subjects in each group of interest to avoid the class imbalance problem.
+
+
+Random forests \autocite{breiman2001random} have shown promising results considering the low variance in the computed graph measures. Because the random forest is an ensemble method, it is likely that some decision trees were able to correctly identify the interesting features such as \ac{SW} in the \(\alpha\) band which would result in better classification scores of the forest. To the author's best knowledge, this is the first study to apply random forests to graph measures in the context of \ac{AD} brain networks.
+
+Inspecting the \(F_1\) scores in Table~\ref{tab:fscores} shows that classifier performance is better when choosing lower thresholds. The likely explanation for this is that as the threshold is increased, weaker links are added to the network, which do not resemble the true connectivity between the sensors. When the threshold reaches a high-enough value, the graph resembles a random graph and discriminating between groups is in vain.
+
+Although an \(F_1\) score of almost 0.7 seems to indicate a good performance when considering that 1 is the perfect score, this is not enough to allow the random forest to be viable in a clinical setting. It can be seen from the confusion matrices in \ref{appendix:rf-conf} that the algorithm incorrectly classifies a large number of \ac{CS} subjects in the \ac{AD} and \ac{MCI} categories. This means that the algorithm has low specificity and high sensitivity which would result in people undergoing unnecessary treatments \autocite{Lalkhen01122008}.
+
+Several limitations of this study need to be mentioned. Although this study has a relatively higher sample size than previous studies looking at \ac{AD}, \ac{MCI} and \ac{CS} groups \autocite{Tijms2013}, this was not sufficient to gain significant results. It is very likely that changes in methodology would provide different results, but in either case, more data samples are conducive to concluding that certain patterns exist. Similar to any \ac{MEG} study, noise represents a major concern. Visual inspection of epochs was a priori performed on the dataset to remove ocular artefacts and constrained blind source separation was used to remove the cardiac artefact \autocite{Escudero2011b}. In the latter case, the same electrocardiogram component was subtracted from the channels of all epochs of a subject. This in theory should preserve the relative phases between the signals, but further analysis which uses the raw \ac{MEG} signals without the cardiac artefact removal should be performed for comparison. Another source of noise that should be taken into account when interpreting results is volume conduction \autocite{Gross2013}. \ac{dWPLI} is a measure robust to this problem, but spurious correlations are still a possibility. There are also graph threshold values that have not been explored. It may also be beneficial to perform "windowed thresholding" similar to \textcite{Bassett2012Schizo} to investigate "weak links" between certain intervals for interesting patterns.
