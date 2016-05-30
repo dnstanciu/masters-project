@@ -1,4 +1,4 @@
-## MRes Summer Project
+## MRes Neuroinformatics Project
 
 #### Graph Theory as an Alzheimer's Disease Diagnostic Instrument in the Context of Functional Brain Connectivity
 
