@@ -1,0 +1,98 @@
+## Significant p-values for group pairs for MST measures
+
+
+### PLV
+MST measure ; pair ; p-value
+
+L gamma ; CS-AD ; 0.0440 (column 20)
+average L gamma: for CS = 15.6271; for AD = 16.3801 (for MCI = 16.3648)
+
+
+### COH
+MST measure ; pair ; p-value
+
+no of leaves alpha ; CS-AD ; 0.0281 (column 1)
+avg no of leaves alpha: for CS = 39.2308; for AD = 41.9444 (for MCI = 40.5556)
+
+
+### debiased WPLI
+MST measure ; pair ; p-value
+
+no of leaves theta ; CS-MCI ; 0.0048 (column 25)
+avg no of leaves theta: for CS = 99.4615; for MCI = 90 (for AD = 96.0278)
+
+L theta ; CS-MCI ; 0.0029 (column 26)
+avg L theta: for CS = 6.2262; for MCI = 7.6708 (for AD = 6.9957)
+
+GE theta ; CS-MCI ; 0.0050 (column 27)
+avg GE theta: for CS = 0.2109 ; for MCI = 0.1811 (for AD = 0.1973)
+
+avgECC theta ; CS-MCI ; 0.0065 (column 28)
+avg avgECC theta: for CS = 11.6019; for MCI = 14.4846 (for AD = 13.1898)
+
+radius theta ; CS-MCI ; 0.0132 (column 29)
+avg radius theta: for CS = 7.8462; for MCI = 9.6111 (for AD = 8.8056)
+
+diameter theta ; CS-MCI ; 0.0178 (column 30)
+avg diameter theta: for CS = 15.2308; for MCI = 18.6667 (for AD = 17.1111)
+
+
+no of leaves delta ; MCI-AD ; 0.0457 (column 13)
+avg no of leaves delta: for MCI = 93.4444 ; for AD = 98.5 (for CS = 97.6923)
+
+no of leaves theta ; MCI-AD ; 0.0334 (column 25)
+avg no of leaves theta: for MCI = 90; for AD = 96.0278 (for CS = 99.4615)
+
+
+### ImCOH (Imaginary Coherence)
+MST measure ; pair ; p-value
+
+no of leaves delta ; CS-MCI ; 0.0116 (column 13)
+avg no of leaves delta: for CS = 117.4231; for MCI = 111.5 (for AD = 117)
+
+L delta ; CS-MCI ; 0.0407 (column 14)
+avg L delta: for CS = 5.4941; for MCI = 6.1985 (for AD = 5.4556)
+
+GE delta ; CS-MCI ; 0.0486 (column 15)
+avg GE delta: for CS = 0.2370; for MCI = 0.2147 (for AD = 0.2442)
+
+radius delta ; CS-MCI ; 0.0441 (column 17)
+avg radius delta: for CS = 6.6538; for MCI = 7.5556 (for AD = 6.6667)
+
+
+L beta ; CS-AD ; 0.0351 (column 8)
+avg L beta: for CS = 6.4482; for AD = 5.8148 (for MCI = 6.4993)
+
+avgECC beta ; CS-AD ; 0.0015 (column 10)
+avg avgECC beta: for CS = 12.5881; for AD = 10.5858 (for MCI = 12.3179)
+
+radius beta ; CS-AD ; 0.0006 (column 11)
+avg radius beta: for CS = 8.3462; for AD = 7 (for MCI = 8.2222)
+
+diameter beta ; CS-AD ; 0.0012 (column 12)
+avg diameter beta: for CS = 16.2308; for AD = 13.6389 (for MCI = 15.8889)
+
+
+L alpha ; MCI-AD ; 0.0482 (column 2)
+avg L alpha: for MCI = 6.6811; for AD = 5.8645 (for CS = 6.2213)
+
+L beta ; MCI-AD ; 0.0447 (column 8)
+avg L beta: for MCI = 6.4993; for AD = 5.8148 (for CS = 6.4482)
+
+avgECC beta ; MCI-AD ; 0.0130 (column 10)
+avg avgECC beta: for MCI = 12.3179; for AD = 10.5858 (for CS = 12.5881)
+
+radius beta ; MCI-AD ; 0.0072 (column 11)
+avg radius beta: for MCI = 8.2222; for AD = 7 (for CS = 8.3462)
+
+diameter beta ; MCI-AD ; 0.0103 (column 12)
+avg diameter beta: for MCI = 15.8889; for AD = 13.6389 (for CS = 16.2308)
+
+no of leaves delta ; MCI-AD ; 0.0165 (column 13)
+avg no of leaves delta: for MCI = 111.5000; for AD = 117 (for CS = 117.4231)
+
+L delta ; MCI-AD ; 0.0352 (column 14)
+avg L delta: for MCI = 6.1985; for AD = 5.4556 (for CS = 5.4941)
+
+GE delta ; MCI-AD ; 0.0175 (column 15)
+avg GE delta: for MCI = 0.2147; for AD = 0.2442 (for CS = 0.2370)

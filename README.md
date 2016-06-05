@@ -12,6 +12,7 @@ This repository also includes follow-up work on the MRes project. It was present
 ## File structure
 
 - docs - contains thesis, project proposal and posters
+- processed_data - contains example connectivity matrices for a subject, computed graph features and statistics
 - report - contains LaTeX code for report
 - sources - contains source files
 
