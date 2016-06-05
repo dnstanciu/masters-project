@@ -2,9 +2,9 @@
 
 #### Graph Theory as an Alzheimer's Disease Diagnostic Instrument in the Context of Functional Brain Connectivity
 
-Supervisor: Dr Javier Escudero ([link](http://www.research.ed.ac.uk/portal/jescuder))
+Supervisor: Dr Javier Escudero - University of Edinburgh ([link](http://www.research.ed.ac.uk/portal/jescuder))
 
-Collaborators: Prof Alberto Fernández ([link](https://www.ucm.es/psiquiatria/directorio?id=9190))
+Collaborators: Prof Alberto Fernández - Complutense University of Madrid ([link](https://www.ucm.es/psiquiatria/directorio?id=9190))
 
 
 This repository also includes follow-up work on the MRes project. It was presented at the [BrainModes](http://www.brainmodes.org/) 2014 conference: [poster](./docs/BrainModes2014_poster.pdf) and [link](http://goo.gl/H39ueD) to contribution.
