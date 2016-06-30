@@ -11,6 +11,7 @@ This repository also includes follow-up work on the MRes project. It was present
 ## Pipeline Overview
 
 ![Pipeline](./report/images/MLbraingraphs.png)
+Image credit: Richiardi et al. (2013) [link](http://ieeexplore.ieee.org/xpl/login.jsp?tp=&arnumber=6494687)
 
 ## File structure
 
