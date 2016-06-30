@@ -6,12 +6,20 @@
 - Collaborators: Prof Alberto Fernández - Complutense University of Madrid ([link](https://www.ucm.es/psiquiatria/directorio?id=9190))
 
 
-This repository also includes follow-up work on the MRes project. It was presented at the [BrainModes](http://www.brainmodes.org/) 2014 conference: [poster](./docs/BrainModes2014_poster.pdf) and [link](http://goo.gl/H39ueD) to contribution.
+The work was presented at the [BrainModes](http://www.brainmodes.org/) 2014 conference: [poster](./docs/BrainModes2014_poster.pdf) and [link](http://goo.gl/H39ueD) to contribution.
 
 ## Pipeline Overview
 
 ![Pipeline](./report/images/MLbraingraphs.png)
-Image credit: Richiardi et al. (2013) [link](http://ieeexplore.ieee.org/xpl/login.jsp?tp=&arnumber=6494687)
+Image credit: Richiardi et al. (2013) ([link](http://ieeexplore.ieee.org/xpl/login.jsp?tp=&arnumber=6494687))
+
+- a) Imaging data is arranged in regions of interest with each region having corresponding time series
+- b) The signals are used to compute a graph in which vertices correspond to brain regions and edges represent correlations between these regions
+- c) Graph measures computed from the networks are organised in feature vectors
+- d) The vectors are used as input for different classifiers
+- e) Data visualisation of interesting patterns is performed for results interpretation
+- f) Model evaluation is used to assess algorithm quality
+
 
 ## File structure
 
