@@ -10,7 +10,7 @@ This repository also includes follow-up work on the MRes project. It was present
 
 ## Pipeline Overview
 
-![Pipeline](./report/MLbraingraphs.png)
+![Pipeline](./report/images/MLbraingraphs.png)
 
 ## File structure
 
