@@ -8,6 +8,10 @@
 
 This repository also includes follow-up work on the MRes project. It was presented at the [BrainModes](http://www.brainmodes.org/) 2014 conference: [poster](./docs/BrainModes2014_poster.pdf) and [link](http://goo.gl/H39ueD) to contribution.
 
+## Pipeline Overview
+
+![Pipeline](./report/MLbraingraphs.png)
+
 ## File structure
 
 - docs - contains thesis, project proposal and posters
